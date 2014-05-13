@@ -1,0 +1,11 @@
+{
+  "name": "dropdown",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.9.2",
+    "class": "~2.0.5"
+  },
+  "devDependencies": {
+    "neuron": "~5.1.0"
+  }
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./neurons/neuron/latest/neuron.js"></script>
+    <script>
+        neuron.config({
+            path:"./neurons"
+        });
+    </script>
+</head>
+<body>
+    <div class="dropdown" id="dropdown-buddy">
+        <a class="dropdown-toggle">
+            <span class="dropdown-text">菜单</span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>选项1</li>
+            <li>选项2</li>
+            <li>选项3</li>
+            <li>选项4</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+
+    _use("jquery",function($){
+
+    _use("dropdown",function(dropdown){
+        var menu = dropdown($("#dropdown-buddy"));
+        menu.on("select",function(val){
+            console.log(val,"被选中");
+        });
+    });
+    });
+    
+
+    </script>
+
+</body>
+</html>
